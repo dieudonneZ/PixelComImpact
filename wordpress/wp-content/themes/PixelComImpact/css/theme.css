@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+/* On applique un gris plus clair sur les paragraphes */
+p {
+    color: #313332;
+}
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+.hover-effect img {
+    transition: all 0.33s ease-in-out;
+    transform: scale(1) translateY(0px);
+}
+.hover-effect img:hover {
+    transition: all 0.33s ease-in-out;
+    transform: scale(1.05) translateY(-10px);
+}
+
+
+
+/* HEADER */
+
+#site-header {
+    height: 100px; /* Définissez une hauteur précise */
+}
+
+#site-header.sticky-top {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+li.menu-item a {
+    color: #0000E3 !important;
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+#site-footer {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+
+
+/* A PROPOS */
+
+
+#apropos h1 {
+    text-align: center;
+    font-size: 60px;
+}
+#apropos > section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+#apropos > section h2 {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 30px;
+}
+#apropos > section .image {
+    width: 300px;
+    padding: 0 15px;
+}
+#apropos > section .image img {
+    width: 100%;
+}
+#apropos > section .text {
+    flex: 1;
+}
+@media( max-width: 768px){
+    #apropos > section > *{
+        width: 100%;
+        flex: initial!important;
+    }
+    #apropos > section .image{
+        order:2;
+    }
+}
+
+
+/* Acceuil */
+
+#hero {
+    background: url('https://exemple.com/mon-image.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#pci_banner {
+    width: 100%;
+    height: 70vh; /* 50% de la hauteur de l'écran */
+    overflow: hidden; /* Évite le débordement */
+}
+
+#pci_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    display: block;
+}
+
+/* SECTIONS GÉNÉRALES */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section .image {
+    width: 300px;
+    padding: 0 15px;
+}
+
+.section .image img {
+    width: 100%;
+}
+
+.section .text {
+    flex: 1;
+    padding: 0 15px;
+}
+
+@media(max-width: 768px) {
+    .section > * {
+        width: 100%;
+        flex: initial !important;
+    }
+    .section .image {
+        order: 2;
+    }
+}

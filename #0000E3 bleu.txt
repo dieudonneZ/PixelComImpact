@@ -1,0 +1,10 @@
+#0000E3 bleu
+#E55F02 ORANGE
+#B3B3B3 GRIS
+#f2f6ff bleu grisé
+
+
+PWS FTP: cD6*Meuz$ywJH@j
+d6d88583f63e
+
+docker cp 5b56b5629d72:/var/www/html ./wordpress
