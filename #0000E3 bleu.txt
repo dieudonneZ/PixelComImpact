@@ -2,6 +2,12 @@
 #E55F02 ORANGE
 #B3B3B3 GRIS
 #f2f6ff bleu grisé
+#0C0C0C0A 
+
+#00000075 Fond baniere sombre
+
+Adresse : https://maps.app.goo.gl/e7dYPLih4XGBBg1h7 ​
+
 
 PWD: PixelCI@2025
 PWS FTP: cD6*Meuz$ywJH@j
